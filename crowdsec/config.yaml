@@ -15,8 +15,10 @@ arch:
   - i386
 ports:
   8080/tcp: null
+  4242/udp: null
 ports_description:
   8080/tcp: "CrowdSec Local API"
+  4242/udp: "Syslog server listener"
 image: "ghcr.io/crowdsecurity/{arch}-addon-crowdsec"
 options:
   acquisition: |
